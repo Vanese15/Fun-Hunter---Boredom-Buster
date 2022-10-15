@@ -20,7 +20,7 @@ if (process.env.DATABASE_URL) {
     {
       host: 'localhost',
       dialect: 'mysql',
-      port: 8080
+      port: 3306
     },
     process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0',
   );

@@ -1,0 +1,20 @@
+<section class="history">
+
+    <h3>{{name}}'s Search History...</h3>
+
+    <table class="history-table">
+        <tr id="history-header">
+            <th>Date</th>
+            <th>Activity</th>
+        </tr>
+    {{#each array}}
+        <tr id="history-input">
+            <th>{{this.dataValues.date}}</th>
+            <th>{{this.dataValues.selectedActivity}}</th>
+        </tr>
+    {{/each}}
+    </table>
+</section>
+
+<script src="./js/historyPage.js"></script>
+<script src="./js/logout.js"></script>
